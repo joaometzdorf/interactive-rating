@@ -74,6 +74,7 @@ h1 {
     border-radius: 50%;
     color: var(--Light-Grey);
     padding: 1rem 1.5rem;
+    cursor: pointer;
 
     span {
         font-size: 1.2rem;
@@ -93,6 +94,7 @@ h1 {
     font-size: 1.1rem;
     letter-spacing: 2px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .section__number-buttons_button:hover {
@@ -108,4 +110,30 @@ h1 {
 [data-btn-submit]:hover {
     background-color: var(--White);
     color: var(--Orange);
+}
+
+@media (min-width: 1440px) {
+
+    main {
+        width: 17%;
+        padding: 2.5rem;
+        align-items: start;
+        justify-content: space-evenly;
+    }
+
+    .icon__star {
+        padding: 1rem;
+    }
+    .main__paragraph {
+        font-size: 1rem;
+    }
+
+    .section__number-buttons{
+        gap: .8rem;
+        margin: 1rem 0;
+    }
+
+    [data-btn-submit] {
+        width: 100%;
+    }
 }
