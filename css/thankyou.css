@@ -61,3 +61,13 @@ main {
         margin: 0 0 1rem 0;
     }
 }
+
+@media (min-width: 1440px) {
+    main {
+        max-width: 20%;
+    }
+
+    img {
+        padding: 1.5rem 0;
+    }
+}
