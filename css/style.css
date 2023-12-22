@@ -30,7 +30,7 @@ body {
 main {
   background-color: var(--Dark-Blue);
   padding: 1.5rem;
-  margin: 0 1.5rem;
+  margin: 1.5rem 1.5rem;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -129,6 +129,21 @@ grid-area: five;
   color: var(--Orange);
 }
 
+.attribution {
+  color: var(--White);
+  font-size: 1rem;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: var(--Orange);
+  }
+
+  a:hover {
+    color: var(--Light-Grey);
+  }
+}
+
 @media (min-width: 1440px) {
   main {
     max-width: 22.5%;
@@ -161,5 +176,9 @@ grid-area: five;
   [data-btn-submit] {
     width: 100%;
     margin-bottom: -2rem;
+  }
+
+  .attribution {
+      font-size: 1.4rem;
   }
 }
