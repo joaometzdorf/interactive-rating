@@ -38,36 +38,49 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+}
 
-    span {
-        background-color: var(--Medium-Grey-Opacity);
-        color: var(--Orange);
-        padding: .6rem 1rem;
-        border-radius: 1.5rem;
-        margin: 0;
-        font-size: 1rem;
-    }
+span {
+    background-color: var(--Medium-Grey-Opacity);
+    color: var(--Orange);
+    padding: .6rem 1rem;
+    border-radius: 1.5rem;
+    margin: 0;
+    font-size: 1rem;
+}
 
-    h1 {
-        color: var(--White);
-        font-size: 2rem;
-        margin: 0;
-    }
+h1 {
+    color: var(--White);
+    font-size: 2rem;
+    margin: 0;
+}
 
-    .paragraph__thanks {
-        color: var(--Light-Grey);
-        font-size: .9rem;
-        text-align: center;
-        margin: 0 0 1rem 0;
-    }
+.paragraph__thanks {
+    color: var(--Light-Grey);
+    font-size: .9rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
 }
 
 @media (min-width: 1440px) {
     main {
-        max-width: 20%;
+        max-width: 30%;
     }
 
     img {
         padding: 1.5rem 0;
+        width: 15rem;
+    }
+
+    span {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .paragraph__thanks {
+        font-size: 1.5rem;
     }
 }

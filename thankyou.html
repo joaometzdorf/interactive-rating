@@ -18,8 +18,7 @@
         <section class="section__thanks">
             <img class="illustration__thanks" src="./images/illustration-thank-you.svg"
                 alt="Illustration of a card machine with a receipt">
-            <span class="
-            selected__number"></span>
+            <span class="selected__number"></span>
             <h1>Thank you!</h1>
             <p class="paragraph__thanks">We appreciate you taking the time to give a rating. If you ever need more
                 support,
@@ -28,7 +27,16 @@
 
     </main>
 
-    <script src="./js/script.js"></script>
+    <script>
+        const selectedNumber = document.querySelector(".selected__number");
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const storageNumber = JSON.parse(localStorage.getItem("number")) || [];
+            const selectedValue = storageNumber[storageNumber.length - 1]?.rating || "";
+
+            selectedNumber.textContent = `You selected ${selectedValue} out of 5`;
+        })
+    </script>
 </body>
 
 </html>
