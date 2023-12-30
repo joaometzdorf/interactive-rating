@@ -10,8 +10,8 @@ Construir o interactive rating o mais próximo possível do design fornecido.
 
 ### Screenshot
 
-![](./interactive-rating-1)
-![](./interactive-rating-2)
+![](./interactive-rating-1.png)
+![](./interactive-rating-2.png)
 
 ### Links
 
